@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0DC17072B3CB43200BD94C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC17062B3CB43200BD94C4 /* AppDelegate.swift */; };
+		D0DC17092B3CB43200BD94C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC17082B3CB43200BD94C4 /* SceneDelegate.swift */; };
+		D0DC17102B3CB43400BD94C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DC170F2B3CB43400BD94C4 /* Assets.xcassets */; };
+		D0DC17132B3CB43400BD94C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0DC17112B3CB43400BD94C4 /* LaunchScreen.storyboard */; };
+		D0DC171E2B3CB43400BD94C4 /* Bet365TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC171D2B3CB43400BD94C4 /* Bet365TaskTests.swift */; };
+		D0DC17282B3CB43400BD94C4 /* Bet365TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC17272B3CB43400BD94C4 /* Bet365TaskUITests.swift */; };
+		D0DC172A2B3CB43400BD94C4 /* Bet365TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC17292B3CB43400BD94C4 /* Bet365TaskUITestsLaunchTests.swift */; };
+		D0DC17392B3CB55100BD94C4 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC17372B3CB55100BD94C4 /* GridViewController.swift */; };
+		D0DC173A2B3CB55100BD94C4 /* GridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DC17382B3CB55100BD94C4 /* GridViewController.xib */; };
+		D0DC173D2B3CB5D700BD94C4 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC173C2B3CB5D700BD94C4 /* DataModels.swift */; };
+		D0DC173F2B3CB64100BD94C4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC173E2B3CB64100BD94C4 /* Extensions.swift */; };
+		D0DC17432B3CB68500BD94C4 /* snapshot.csv in Resources */ = {isa = PBXBuildFile; fileRef = D0DC17412B3CB68500BD94C4 /* snapshot.csv */; };
+		D0DC17442B3CB68500BD94C4 /* deltas.csv in Resources */ = {isa = PBXBuildFile; fileRef = D0DC17422B3CB68500BD94C4 /* deltas.csv */; };
+		D0DC17462B3CB6B100BD94C4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC17452B3CB6B100BD94C4 /* DataService.swift */; };
+		D0DC17492B3CB6E000BD94C4 /* TableCntrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC17482B3CB6E000BD94C4 /* TableCntrl.swift */; };
+		D0DC174B2B3CB74600BD94C4 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC174A2B3CB74600BD94C4 /* GridViewModel.swift */; };
+		D0DC174F2B3CB7C300BD94C4 /* GridItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DC174D2B3CB7C200BD94C4 /* GridItemTableViewCell.swift */; };
+		D0DC17502B3CB7C300BD94C4 /* GridItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DC174E2B3CB7C200BD94C4 /* GridItemTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0DC171A2B3CB43400BD94C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0DC16FB2B3CB43200BD94C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0DC17022B3CB43200BD94C4;
+			remoteInfo = Bet365Task;
+		};
+		D0DC17242B3CB43400BD94C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0DC16FB2B3CB43200BD94C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0DC17022B3CB43200BD94C4;
+			remoteInfo = Bet365Task;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0DC17032B3CB43200BD94C4 /* Bet365Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bet365Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DC17062B3CB43200BD94C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0DC17082B3CB43200BD94C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0DC170F2B3CB43400BD94C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0DC17122B3CB43400BD94C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0DC17142B3CB43400BD94C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DC17192B3CB43400BD94C4 /* Bet365TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bet365TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DC171D2B3CB43400BD94C4 /* Bet365TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet365TaskTests.swift; sourceTree = "<group>"; };
+		D0DC17232B3CB43400BD94C4 /* Bet365TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bet365TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DC17272B3CB43400BD94C4 /* Bet365TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet365TaskUITests.swift; sourceTree = "<group>"; };
+		D0DC17292B3CB43400BD94C4 /* Bet365TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet365TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0DC17372B3CB55100BD94C4 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		D0DC17382B3CB55100BD94C4 /* GridViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridViewController.xib; sourceTree = "<group>"; };
+		D0DC173C2B3CB5D700BD94C4 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		D0DC173E2B3CB64100BD94C4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D0DC17412B3CB68500BD94C4 /* snapshot.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = snapshot.csv; sourceTree = "<group>"; };
+		D0DC17422B3CB68500BD94C4 /* deltas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deltas.csv; sourceTree = "<group>"; };
+		D0DC17452B3CB6B100BD94C4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D0DC17482B3CB6E000BD94C4 /* TableCntrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCntrl.swift; sourceTree = "<group>"; };
+		D0DC174A2B3CB74600BD94C4 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
+		D0DC174D2B3CB7C200BD94C4 /* GridItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridItemTableViewCell.swift; sourceTree = "<group>"; };
+		D0DC174E2B3CB7C200BD94C4 /* GridItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GridItemTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0DC17002B3CB43200BD94C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DC17162B3CB43400BD94C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DC17202B3CB43400BD94C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0DC16FA2B3CB43200BD94C4 = {
+			isa = PBXGroup;
+			children = (
+				D0DC17052B3CB43200BD94C4 /* Bet365Task */,
+				D0DC171C2B3CB43400BD94C4 /* Bet365TaskTests */,
+				D0DC17262B3CB43400BD94C4 /* Bet365TaskUITests */,
+				D0DC17042B3CB43200BD94C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0DC17042B3CB43200BD94C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC17032B3CB43200BD94C4 /* Bet365Task.app */,
+				D0DC17192B3CB43400BD94C4 /* Bet365TaskTests.xctest */,
+				D0DC17232B3CB43400BD94C4 /* Bet365TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0DC17052B3CB43200BD94C4 /* Bet365Task */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC17402B3CB67000BD94C4 /* Resources */,
+				D0DC17362B3CB52F00BD94C4 /* VCs */,
+				D0DC17062B3CB43200BD94C4 /* AppDelegate.swift */,
+				D0DC17082B3CB43200BD94C4 /* SceneDelegate.swift */,
+				D0DC170F2B3CB43400BD94C4 /* Assets.xcassets */,
+				D0DC17112B3CB43400BD94C4 /* LaunchScreen.storyboard */,
+				D0DC17142B3CB43400BD94C4 /* Info.plist */,
+				D0DC173E2B3CB64100BD94C4 /* Extensions.swift */,
+			);
+			path = Bet365Task;
+			sourceTree = "<group>";
+		};
+		D0DC171C2B3CB43400BD94C4 /* Bet365TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC171D2B3CB43400BD94C4 /* Bet365TaskTests.swift */,
+			);
+			path = Bet365TaskTests;
+			sourceTree = "<group>";
+		};
+		D0DC17262B3CB43400BD94C4 /* Bet365TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC17272B3CB43400BD94C4 /* Bet365TaskUITests.swift */,
+				D0DC17292B3CB43400BD94C4 /* Bet365TaskUITestsLaunchTests.swift */,
+			);
+			path = Bet365TaskUITests;
+			sourceTree = "<group>";
+		};
+		D0DC17362B3CB52F00BD94C4 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC17472B3CB6D500BD94C4 /* TableCntrl */,
+				D0DC17452B3CB6B100BD94C4 /* DataService.swift */,
+				D0DC173B2B3CB5C900BD94C4 /* Model */,
+				D0DC17372B3CB55100BD94C4 /* GridViewController.swift */,
+				D0DC17382B3CB55100BD94C4 /* GridViewController.xib */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		D0DC173B2B3CB5C900BD94C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC173C2B3CB5D700BD94C4 /* DataModels.swift */,
+				D0DC174A2B3CB74600BD94C4 /* GridViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0DC17402B3CB67000BD94C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC17422B3CB68500BD94C4 /* deltas.csv */,
+				D0DC17412B3CB68500BD94C4 /* snapshot.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0DC17472B3CB6D500BD94C4 /* TableCntrl */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC174C2B3CB79C00BD94C4 /* TableCells */,
+				D0DC17482B3CB6E000BD94C4 /* TableCntrl.swift */,
+			);
+			path = TableCntrl;
+			sourceTree = "<group>";
+		};
+		D0DC174C2B3CB79C00BD94C4 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC174D2B3CB7C200BD94C4 /* GridItemTableViewCell.swift */,
+				D0DC174E2B3CB7C200BD94C4 /* GridItemTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0DC17022B3CB43200BD94C4 /* Bet365Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DC172D2B3CB43400BD94C4 /* Build configuration list for PBXNativeTarget "Bet365Task" */;
+			buildPhases = (
+				D0DC16FF2B3CB43200BD94C4 /* Sources */,
+				D0DC17002B3CB43200BD94C4 /* Frameworks */,
+				D0DC17012B3CB43200BD94C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bet365Task;
+			productName = Bet365Task;
+			productReference = D0DC17032B3CB43200BD94C4 /* Bet365Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0DC17182B3CB43400BD94C4 /* Bet365TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DC17302B3CB43400BD94C4 /* Build configuration list for PBXNativeTarget "Bet365TaskTests" */;
+			buildPhases = (
+				D0DC17152B3CB43400BD94C4 /* Sources */,
+				D0DC17162B3CB43400BD94C4 /* Frameworks */,
+				D0DC17172B3CB43400BD94C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0DC171B2B3CB43400BD94C4 /* PBXTargetDependency */,
+			);
+			name = Bet365TaskTests;
+			productName = Bet365TaskTests;
+			productReference = D0DC17192B3CB43400BD94C4 /* Bet365TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0DC17222B3CB43400BD94C4 /* Bet365TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DC17332B3CB43400BD94C4 /* Build configuration list for PBXNativeTarget "Bet365TaskUITests" */;
+			buildPhases = (
+				D0DC171F2B3CB43400BD94C4 /* Sources */,
+				D0DC17202B3CB43400BD94C4 /* Frameworks */,
+				D0DC17212B3CB43400BD94C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0DC17252B3CB43400BD94C4 /* PBXTargetDependency */,
+			);
+			name = Bet365TaskUITests;
+			productName = Bet365TaskUITests;
+			productReference = D0DC17232B3CB43400BD94C4 /* Bet365TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0DC16FB2B3CB43200BD94C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					D0DC17022B3CB43200BD94C4 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					D0DC17182B3CB43400BD94C4 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D0DC17022B3CB43200BD94C4;
+					};
+					D0DC17222B3CB43400BD94C4 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D0DC17022B3CB43200BD94C4;
+					};
+				};
+			};
+			buildConfigurationList = D0DC16FE2B3CB43200BD94C4 /* Build configuration list for PBXProject "Bet365Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0DC16FA2B3CB43200BD94C4;
+			productRefGroup = D0DC17042B3CB43200BD94C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0DC17022B3CB43200BD94C4 /* Bet365Task */,
+				D0DC17182B3CB43400BD94C4 /* Bet365TaskTests */,
+				D0DC17222B3CB43400BD94C4 /* Bet365TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0DC17012B3CB43200BD94C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DC17132B3CB43400BD94C4 /* LaunchScreen.storyboard in Resources */,
+				D0DC17102B3CB43400BD94C4 /* Assets.xcassets in Resources */,
+				D0DC17502B3CB7C300BD94C4 /* GridItemTableViewCell.xib in Resources */,
+				D0DC17432B3CB68500BD94C4 /* snapshot.csv in Resources */,
+				D0DC17442B3CB68500BD94C4 /* deltas.csv in Resources */,
+				D0DC173A2B3CB55100BD94C4 /* GridViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DC17172B3CB43400BD94C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DC17212B3CB43400BD94C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0DC16FF2B3CB43200BD94C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DC174B2B3CB74600BD94C4 /* GridViewModel.swift in Sources */,
+				D0DC173F2B3CB64100BD94C4 /* Extensions.swift in Sources */,
+				D0DC17072B3CB43200BD94C4 /* AppDelegate.swift in Sources */,
+				D0DC173D2B3CB5D700BD94C4 /* DataModels.swift in Sources */,
+				D0DC17492B3CB6E000BD94C4 /* TableCntrl.swift in Sources */,
+				D0DC174F2B3CB7C300BD94C4 /* GridItemTableViewCell.swift in Sources */,
+				D0DC17462B3CB6B100BD94C4 /* DataService.swift in Sources */,
+				D0DC17092B3CB43200BD94C4 /* SceneDelegate.swift in Sources */,
+				D0DC17392B3CB55100BD94C4 /* GridViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DC17152B3CB43400BD94C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DC171E2B3CB43400BD94C4 /* Bet365TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DC171F2B3CB43400BD94C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DC172A2B3CB43400BD94C4 /* Bet365TaskUITestsLaunchTests.swift in Sources */,
+				D0DC17282B3CB43400BD94C4 /* Bet365TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0DC171B2B3CB43400BD94C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0DC17022B3CB43200BD94C4 /* Bet365Task */;
+			targetProxy = D0DC171A2B3CB43400BD94C4 /* PBXContainerItemProxy */;
+		};
+		D0DC17252B3CB43400BD94C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0DC17022B3CB43200BD94C4 /* Bet365Task */;
+			targetProxy = D0DC17242B3CB43400BD94C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0DC17112B3CB43400BD94C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0DC17122B3CB43400BD94C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0DC172B2B3CB43400BD94C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0DC172C2B3CB43400BD94C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0DC172E2B3CB43400BD94C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5S7Q94T78M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bet365Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MirzaSoft.dev.Bet365Task;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0DC172F2B3CB43400BD94C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5S7Q94T78M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bet365Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MirzaSoft.dev.Bet365Task;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0DC17312B3CB43400BD94C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5S7Q94T78M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MirzaSoft.dev.Bet365TaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bet365Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bet365Task";
+			};
+			name = Debug;
+		};
+		D0DC17322B3CB43400BD94C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5S7Q94T78M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MirzaSoft.dev.Bet365TaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bet365Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bet365Task";
+			};
+			name = Release;
+		};
+		D0DC17342B3CB43400BD94C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5S7Q94T78M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MirzaSoft.dev.Bet365TaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bet365Task;
+			};
+			name = Debug;
+		};
+		D0DC17352B3CB43400BD94C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5S7Q94T78M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MirzaSoft.dev.Bet365TaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bet365Task;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0DC16FE2B3CB43200BD94C4 /* Build configuration list for PBXProject "Bet365Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DC172B2B3CB43400BD94C4 /* Debug */,
+				D0DC172C2B3CB43400BD94C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DC172D2B3CB43400BD94C4 /* Build configuration list for PBXNativeTarget "Bet365Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DC172E2B3CB43400BD94C4 /* Debug */,
+				D0DC172F2B3CB43400BD94C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DC17302B3CB43400BD94C4 /* Build configuration list for PBXNativeTarget "Bet365TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DC17312B3CB43400BD94C4 /* Debug */,
+				D0DC17322B3CB43400BD94C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DC17332B3CB43400BD94C4 /* Build configuration list for PBXNativeTarget "Bet365TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DC17342B3CB43400BD94C4 /* Debug */,
+				D0DC17352B3CB43400BD94C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0DC16FB2B3CB43200BD94C4 /* Project object */;
+}
