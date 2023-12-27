@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        let viewController = GridViewController(nibName: "GridViewController", bundle: .main)
+        let viewController = GridViewController(nibName: GridViewController.kNibName, bundle: .main)
         
         let navController = UINavigationController(rootViewController: viewController)
 
