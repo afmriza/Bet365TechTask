@@ -97,7 +97,7 @@ class GraphView: UIView {
         
         // Add points for each item in the graphPoints array
         // at the correct (x, y) for the point
-        for i in 1..<graphPoints.count {
+        for i in 0..<graphPoints.count {
             
             let nextPoint = CGPoint(x: columnXPoint(i), y: columnYPoint(graphPoints[i]))
             graphPath.addLine(to: nextPoint)
