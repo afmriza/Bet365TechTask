@@ -29,6 +29,7 @@ class GraphView: UIView {
         
         didSet {
             // trigger ui update
+            infoPopup?.removeFromSuperview()
             setNeedsDisplay()
         }
     }

@@ -18,6 +18,7 @@ class GraphTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLbl: UILabel!
     
     private let graphViewInitialWidth = 900.0
+    private let stepX = 40
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +31,7 @@ class GraphTableViewCell: UITableViewCell {
         titleLbl.text = title
         graphView.graphPoints = price
         
-        let newWidth = CGFloat((price.count - 1) * 40 + 40)
+        let newWidth = CGFloat((price.count - 1) * stepX + stepX)
         if newWidth > graphViewWidth.constant {
             
             graphViewWidth.constant = newWidth

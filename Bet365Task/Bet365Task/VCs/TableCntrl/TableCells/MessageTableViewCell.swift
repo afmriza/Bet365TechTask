@@ -9,11 +9,13 @@ import UIKit
 
 class MessageTableViewCell: UITableViewCell {
     
+    static let kCellHeight: CGFloat = 60.0
+    
     @IBOutlet private weak var messageLbl: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
     
     // MARK: - Public

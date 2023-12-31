@@ -86,6 +86,7 @@ class TableCntrl: NSObject, UITableViewDelegate, UITableViewDataSource {
         
         let section = Sections(rawValue: indexPath.section)!
         switch section {
+            
         case .EGraphView:
             var title: String?
             
@@ -100,15 +101,13 @@ class TableCntrl: NSObject, UITableViewDelegate, UITableViewDataSource {
             return cell
             
         case .EGrid:
-            
             let cell = tableView.dequeueReusableCell(withIdentifier: GridItemTableViewCell.kCellId, for: indexPath) as! GridItemTableViewCell
             
             cell.setCellData(showHeader: indexPath.row == 0, data: model.finData[indexPath.row])
             
             return cell
-            
+    
         case .ENoDataMessage:
-            
             let cell =  tableView.dequeueReusableCell(withIdentifier: MessageTableViewCell.kCellId, for: indexPath) as! MessageTableViewCell
             
             cell.setCellData(message: "No data available")
@@ -133,7 +132,7 @@ class TableCntrl: NSObject, UITableViewDelegate, UITableViewDataSource {
             return indexPath.row == 0 ? GridItemTableViewCell.kCellHeightWithHeader : GridItemTableViewCell.kCellHeigthNoHeader
         case .ENoDataMessage:
             
-            return 60
+            return MessageTableViewCell.kCellHeight
         }
     }
     
