@@ -11,10 +11,10 @@ class GridViewModel {
       
     /// a published array of financial data objs to update UI
     @Published private(set) var finData: [FinancialDataObj] = []
-
+    @Published var showGraphView: Bool = false
     
     /// an array to hold values from delta csv file
-    private var deltas = [FinancialDataObj]()
+    private(set) var deltas = [FinancialDataObj]()
     
     /// an array to hold delay times
     private(set) var delayTimes = [Double]()
@@ -24,7 +24,9 @@ class GridViewModel {
     private let dataService = DataService()
     
     public var delayTimesIndex = 0
-    
+    public var selecdIndexforGraph: Int?
+    public var graphData = [Float]()
+
     public func getSnapShot() {
         
         guard let filePath = Bundle.main.path(forResource: "snapshot", ofType: "csv") else {
@@ -52,7 +54,6 @@ class GridViewModel {
         processDeltas()
     }
     
-    @objc
     public func processDeltas() {
         
         if (tempDeltaData.isEmpty) {
@@ -71,7 +72,17 @@ class GridViewModel {
         }
         
         finData = firstTen
-        tempDeltaData.removeFirst(10)
         
+        populateGraphData()
+        
+        tempDeltaData.removeFirst(10)
+    }
+    
+    func populateGraphData() {
+        
+        if let selIndxforGraph = selecdIndexforGraph, showGraphView {
+            
+            graphData.append(finData[selIndxforGraph].price ?? 0.0 )
+        }
     }
 }

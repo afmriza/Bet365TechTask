@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="GraphTableViewCell" customModule="Bet365Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg1-Fi-Om8">
+                        <rect key="frame" x="179" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70m-hN-vCq">
+                        <rect key="frame" x="8" y="37" width="384" height="263"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFd-vx-4O7" customClass="GraphView" customModule="Bet365Task" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="900" height="255"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nei-GF-AwS">
+                                        <rect key="frame" x="8" y="0.0" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Nei-GF-AwS" firstAttribute="leading" secondItem="eFd-vx-4O7" secondAttribute="leading" constant="8" id="CEq-qF-EHh"/>
+                                    <constraint firstAttribute="width" constant="900" id="SJJ-Ax-ZUH"/>
+                                    <constraint firstItem="Nei-GF-AwS" firstAttribute="top" secondItem="eFd-vx-4O7" secondAttribute="top" id="gjF-vz-AQU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eFd-vx-4O7" firstAttribute="leading" secondItem="70m-hN-vCq" secondAttribute="leading" id="9vG-Vg-JWU"/>
+                            <constraint firstAttribute="bottom" secondItem="eFd-vx-4O7" secondAttribute="bottom" id="Q47-U9-cDn"/>
+                            <constraint firstAttribute="trailing" secondItem="eFd-vx-4O7" secondAttribute="trailing" id="VVB-5X-x4z"/>
+                            <constraint firstItem="eFd-vx-4O7" firstAttribute="top" secondItem="70m-hN-vCq" secondAttribute="top" id="x9A-2n-iUD"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="70m-hN-vCq" secondAttribute="bottom" id="1Ya-24-dfk"/>
+                    <constraint firstItem="Lg1-Fi-Om8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="key-xU-vjD"/>
+                    <constraint firstItem="eFd-vx-4O7" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.85" id="leG-22-PJq"/>
+                    <constraint firstItem="70m-hN-vCq" firstAttribute="top" secondItem="Lg1-Fi-Om8" secondAttribute="bottom" constant="8" id="pgw-dI-4ai"/>
+                    <constraint firstItem="70m-hN-vCq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rvT-c2-OwK"/>
+                    <constraint firstAttribute="trailing" secondItem="70m-hN-vCq" secondAttribute="trailing" constant="8" id="ubl-eX-rJT"/>
+                    <constraint firstItem="Lg1-Fi-Om8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="vrn-gS-INQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="graphView" destination="eFd-vx-4O7" id="3Ds-AR-PBG"/>
+                <outlet property="graphViewWidth" destination="SJJ-Ax-ZUH" id="LbE-gg-ODE"/>
+                <outlet property="priceLbl" destination="Nei-GF-AwS" id="orD-K0-Nxs"/>
+                <outlet property="scrollView" destination="70m-hN-vCq" id="MIR-On-0b8"/>
+                <outlet property="titleLbl" destination="Lg1-Fi-Om8" id="ZMH-An-oaV"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="21"/>
+        </tableViewCell>
+    </objects>
+</document>

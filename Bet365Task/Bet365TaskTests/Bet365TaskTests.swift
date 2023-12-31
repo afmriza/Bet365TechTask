@@ -10,27 +10,42 @@ import XCTest
 
 final class Bet365TaskTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    // system under test
+    var sut: GridViewModel?
+    
+    override func setUp() {
+        super.setUp()
+        
+        sut = GridViewModel()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        super.tearDown()
+        
+        sut = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testGetSnapShot() {
+        
+        sut?.getSnapShot()
+        
+        XCTAssertFalse(sut?.finData.isEmpty ?? false, "Property should not be empty but was found to be empty")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testGetDeltas() {
+        
+        sut?.getDeltas()
+        
+        XCTAssertFalse(sut?.delayTimes.isEmpty ?? false, "Property should not be empty but was found to be empty")
+        XCTAssertFalse(sut?.deltas.isEmpty ?? false, "Property should not be empty but was found to be empty")
+    }
+    
+    func testGetDeltasCallsProcessDeltas() {
+        
+        sut?.getDeltas()
+        
+        XCTAssertEqual(sut?.finData.count, 10)
+        XCTAssertTrue(sut?.graphData.isEmpty ?? false)
     }
 
 }

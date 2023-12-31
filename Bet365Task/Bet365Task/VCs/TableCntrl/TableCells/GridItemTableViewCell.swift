@@ -1,6 +1,6 @@
 //
 //  GridItemTableViewCell.swift
-//  Bet365TechTask
+//  Bet365Task
 //
 //  Created by Faraz on 27/12/2023.
 //
@@ -8,6 +8,9 @@
 import UIKit
 
 class GridItemTableViewCell: UITableViewCell {
+    
+    static let kCellHeightWithHeader: CGFloat = 100
+    static let kCellHeigthNoHeader: CGFloat = 50
     
     @IBOutlet private weak var headerStack: UIStackView!
     
@@ -23,8 +26,6 @@ class GridItemTableViewCell: UITableViewCell {
     @IBOutlet private weak var percentChange: UILabel!
     @IBOutlet private weak var mktCap: UILabel!
     
-    public var cellTapped: ((String) -> Void)?
-
     override func awakeFromNib() {
         super.awakeFromNib()
 
